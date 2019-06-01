@@ -6,7 +6,9 @@ const DataConsumer: any = () => (
   <Context.Consumer>
     {context => (
       <>
-        <button onClick={context.reload}>Change person</button>
+        <button className="btn btn-danger" onClick={context.reload}>
+          Change Hero
+        </button>
         <br />
         <Table
           name={context.name}

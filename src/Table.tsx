@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Table(props) {
   return (
-    <table>
+    <table className="table table-dark">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Gender</th>
-          <th>Height</th>
+          <th scope="col">Name</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Height</th>
         </tr>
       </thead>
       <tbody>

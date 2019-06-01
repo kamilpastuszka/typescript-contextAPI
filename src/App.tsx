@@ -9,7 +9,9 @@ function App() {
     <DataProvider>
       <div className="App">
         <header className="App-header">
-          <DataConsumer />
+          <div className="container">
+            <DataConsumer />
+          </div>
         </header>
       </div>
     </DataProvider>
