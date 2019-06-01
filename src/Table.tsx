@@ -5,9 +5,9 @@ export default function Table(props) {
     <table className="table table-dark">
       <thead>
         <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Gender</th>
-          <th scope="col">Height</th>
+          <th scope="col-md-6">Name</th>
+          <th scope="col-md-3">Gender</th>
+          <th scope="col-md-3">Height</th>
         </tr>
       </thead>
       <tbody>

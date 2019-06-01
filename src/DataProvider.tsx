@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 
+interface SharedObj {
+  name?: string;
+  gender?: string | number;
+  height?: string | number;
+}
+
 interface PersonContext {
   name?: string;
   gender?: string | number;
@@ -31,7 +37,6 @@ export default class DataProvider extends Component<{}, IState> {
     fetch(`https://swapi.co/api/people/${random}`)
       .then(res => res.json())
       .then(data => {
-        console.log("data", data);
         this.setState({
           name: data.name,
           height: data.height,

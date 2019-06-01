@@ -23,12 +23,14 @@
   color: #61dafb;
 }
 
+.btn {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
 .container {
   width: 60vw;
   display: flex;
   flex-direction: column;
-}
-
-.btn-danger {
-  text-transform: uppercase;
 }
