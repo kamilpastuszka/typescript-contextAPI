@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 
-interface SharedObj {
-  name?: string;
-  gender?: string | number;
-  height?: string | number;
-}
-
 interface PersonContext {
   name?: string;
   gender?: string | number;
