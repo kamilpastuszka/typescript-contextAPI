@@ -34,13 +34,21 @@ export default class DataProvider extends Component<{}, IState> {
 
   getData = () => {
     const random = Math.floor(Math.random() * 50);
-    fetch(`https://swapi.co/api/people/${random}`)
+    const err = "network error";
+    fetch(`https://swapi.co/api/peope/${random}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
           name: data.name,
           height: data.height,
           gender: data.gender
+        });
+      })
+      .catch(() => {
+        this.setState({
+          name: err,
+          height: err,
+          gender: err
         });
       });
   };
