@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 interface PersonContext {
   name?: string;
   gender?: string | number;
@@ -29,7 +28,7 @@ export default class DataProvider extends Component<{}, IState> {
   getData = () => {
     const random = Math.floor(Math.random() * 50);
     const err = "network error";
-    fetch(`https://swapi.co/api/peope/${random}`)
+    fetch(`https://swapi.co/api/people/${random}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
