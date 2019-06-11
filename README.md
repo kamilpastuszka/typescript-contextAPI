@@ -4,6 +4,10 @@
 
 > npm start - to start application on port 3000
 
-# Preview
+## Preview
 
 <img src="preview.png" width="800px">
+
+## License
+
+MIT
