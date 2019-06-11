@@ -2,19 +2,19 @@ import React from "react";
 
 export default function Table(props) {
   return (
-    <table className="table table-dark">
+    <table className="table table-dark table-fixed">
       <thead>
         <tr>
-          <th scope="col-md-6">Name</th>
-          <th scope="col-md-3">Gender</th>
-          <th scope="col-md-3">Height</th>
+          <th className="col-md-4"> Name</th>
+          <th className="col-md-4">Gender</th>
+          <th className="col-md-4">Height</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>{props.name}</td>
-          <td>{props.gender}</td>
-          <td>{props.height}</td>
+          <td className="col-md-4">{props.name}</td>
+          <td className="col-md-4">{props.gender}</td>
+          <td className="col-md-4">{props.height}</td>
         </tr>
       </tbody>
     </table>
